@@ -1,5 +1,27 @@
-# Vue 3 + TypeScript + Vite
+# PrimeVue Theme Demo
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+A playground for designing and previewing custom PrimeVue 4 component themes.
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## What it is
+
+This project showcases PrimeVue 4 components (inputs, buttons, selects, dialogs, overlays, etc.) with a custom theme applied on top of the Aura preset. Use it to iterate on your theme visually before taking it to production.
+
+## How to use
+
+1. Edit `src/style.css` — this is your portable theme file. It contains global CSS overrides for PrimeVue components (underline inputs, backdrop blur on dialogs, etc.)
+2. Edit the primary color palette and other semantic tokens in `src/main.ts` via `definePreset`
+3. When happy with the result, copy `src/style.css` and the `definePreset` block from `src/main.ts` into any other PrimeVue 4 + Aura project
+
+## Stack
+
+- Vue 3 with `<script setup>` + TypeScript
+- PrimeVue 4 (Aura preset)
+- Vite
+
+## Commands
+
+```bash
+pnpm dev       # start dev server
+pnpm build     # type-check + build
+pnpm preview   # preview production build
+```
