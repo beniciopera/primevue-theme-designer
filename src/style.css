@@ -1,0 +1,21 @@
+:root {
+  font: 16px/1.5 system-ui, 'Segoe UI', Roboto, sans-serif;
+  color-scheme: light dark;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: var(--p-surface-ground);
+  color: var(--p-text-color);
+  transition: background 0.2s, color 0.2s;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
