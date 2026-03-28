@@ -136,12 +136,6 @@ h2 {
   border-bottom: 1px solid var(--p-surface-200);
 }
 
-.row {
-  display: flex;
-  flex-direction: row;
-  gap: 0.5rem;
-}
-
 .wrap {
   flex-wrap: wrap;
 }

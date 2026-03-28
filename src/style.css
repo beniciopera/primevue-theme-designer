@@ -5,6 +5,21 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+/* Backdrop blur for dialog and drawer overlays */
+.p-dialog-mask,
+.p-drawer-mask {
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: backdrop-filter 0.15s ease;
+}
+
+.p-overlay-mask-leave-active.p-dialog-mask,
+.p-overlay-mask-leave-active.p-drawer-mask {
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+}
+
 body {
   margin: 0;
   background: var(--p-surface-ground);

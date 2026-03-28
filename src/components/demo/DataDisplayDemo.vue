@@ -40,6 +40,7 @@ const statusSeverity = (status: Product['status']) => {
     <section>
       <h2>DataTable</h2>
       <DataTable
+        size="small"
         :value="products"
         v-model:selection="selectedProducts"
         selectionMode="multiple"
